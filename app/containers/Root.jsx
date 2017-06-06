@@ -2,14 +2,15 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router';
 import createRoutes from './Routes';
+import PropTypes from 'prop-types';
 
 const routes = createRoutes();
 
 export default class Root extends React.Component {
 
   static propTypes = {
-    history: React.PropTypes.object.isRequired,
-    store: React.PropTypes.object.isRequired
+    history: PropTypes.object.isRequired,
+    store: PropTypes.object.isRequired
   };
 
   render() {

@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Header from '../components/common/Header'
+import PropTypes from 'prop-types'
 
 //import DevTools from '../components/DevTools';
 
@@ -19,7 +20,7 @@ class App extends React.Component {
 }
 
 App.propTypes = {
-    children: React.PropTypes.object.isRequired,
+    children: PropTypes.object.isRequired,
 };
 
 function mapStateToProps(state) {

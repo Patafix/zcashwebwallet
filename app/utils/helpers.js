@@ -1,5 +1,3 @@
-// @flow
-
 /**
  * Helper functions
  * @module Helpers

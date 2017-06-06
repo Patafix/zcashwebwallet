@@ -2,7 +2,7 @@ import {applyMiddleware, createStore, compose, combineReducers} from 'redux';
 import thunk from 'redux-thunk';
 import {browserHistory} from 'react-router';
 import {routerReducer, routerMiddleware} from 'react-router-redux';
-import createLogger from 'redux-logger';
+import { createLogger } from 'redux-logger'
 import rootReducer from '../reducers/index';
 import DevTools from '../components/DevTools';
 

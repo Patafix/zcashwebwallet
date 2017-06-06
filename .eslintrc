@@ -1,7 +1,12 @@
 {
+  "parser": "babel-eslint",
   "rules": {
     "global-require": "off",
     "no-console": "off",
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    "strict": 0
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
   }
 }

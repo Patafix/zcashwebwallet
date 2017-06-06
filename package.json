@@ -10,24 +10,18 @@
   "scripts": {
     "start-dev": "webpack-dev-server --config ./webpack.config.js --open --colors",
     "build": "rimraf public && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "start": "http-server public"
+    "start": "http-server public",
+    "eslint": "eslint ./app/"
   },
-  "dependencies": {
-
-  },
-
+  "dependencies": {},
   "devDependencies": {
-    "babel-preset-stage-0": "^6.24.1",
-    "redux-devtools-chart-monitor": "^1.6.1",
-    "redux-devtools-dock-monitor": "^1.1.2",
-    "redux-devtools-log-monitor": "^1.3.0",
-    "redux-slider-monitor": "^2.0.0-0",
     "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^6.1.2",
     "babel-loader": "^7.0.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "bootstrap": "^3.3.7",
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.0",
@@ -47,6 +41,7 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "postcss-loader": "^2.0.5",
+    "prop-types": "latest",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-hot-loader": "^3.0.0-beta.7",
@@ -56,7 +51,11 @@
     "react-transform-hmr": "^1.0.4",
     "redux": "^3.6.0",
     "redux-devtools": "^3.4.0",
+    "redux-devtools-chart-monitor": "^1.6.1",
+    "redux-devtools-dock-monitor": "^1.1.2",
+    "redux-devtools-log-monitor": "^1.3.0",
     "redux-logger": "^3.0.6",
+    "redux-slider-monitor": "^2.0.0-0",
     "redux-thunk": "^2.2.0",
     "rimraf": "^2.6.1",
     "sinon": "^2.3.2",
@@ -64,7 +63,6 @@
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5",
-    "zcash-primitives": "^0.1.0",
-    "prop-types": "latest"
+    "zcash-primitives": "^0.1.0"
   }
 }
